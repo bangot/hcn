@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Rectangle(a,b){
+        this.a = a;
+        this.b = b;
+        this.theArea = function () {
+            return 's=' + this.a*this.b;
+        }
+        this.thePerimeter=function (){
+            return "p=" + (2*this.a + 2*this.b)
+        }
+    }
+
+    let tuananh= new Rectangle(1,2);
+    console.log(tuananh.theArea());
+    console.log(tuananh.thePerimeter());
+    class Rec{
+        constructor(a,b) {
+            this.a = a;
+            this.b = b;
+        }
+    }
+    function s (){
+        let s = new Rectangle(2,3);
+        return s.a*s.b
+    };
+    function p () {
+        let p = new Rectangle(2,3);
+        return p.a*2 + p.b*2;
+    }
+    console.log(s());
+    console.log(p())
+</script>
+</body>
+</html>
